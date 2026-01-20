@@ -11,6 +11,15 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<script>
+function openPopup() {
+    document.getElementById("emailPopup").style.display = "block";
+}
+
+function closePopup() {
+    document.getElementById("emailPopup").style.display = "none";
+}
+</script>
 	</head>
 	<body class="landing is-preload">
 
@@ -44,8 +53,17 @@ With strong skills in Python, SQL, Excel, and Power BI, I analyze data, create d
 							<ul class="actions special">
 								<li><a href="https://drive.google.com/file/d/19uKZfSwb_OSdoko1ArLjN6YfP4d3jsuw/view?usp=sharing" 
 									class="button primary">Download Resume</a></li>
-								<li><a href="https://mail.google.com/mail/?view=cm&fs=1&to=aswinsadanandan99@gmail.com" 
-									class="button primary">Contact me</span></a></li>
+								<li>
+  <a href="#" onclick="openPopup()" class="button primary">Contact me</a>
+</li>
+
+<div id="emailPopup" style="display:none; position:fixed; top:40%; left:40%; background:#2c3e50; color:white; padding:20px; border:2px solid white;">
+    <p>Email: aswinsadanandan99@gmail.com</p>
+    <button onclick="closePopup()">Close</button>
+</div>
+
+
+
 							</ul>
 						</div>
 						<a href="#one" class="more scrolly">My Projects</a>
@@ -145,7 +163,12 @@ With strong skills in Python, SQL, Excel, and Power BI, I analyze data, create d
 					<footer id="footer">
 						<ul class="icons">
 							<li><a href="https://www.linkedin.com/in/aswin-sadanandan-00b256157" class="icon brands fa-linkedin"><span class="label">linkedin</span></a></li>
-							<li><a href="https://mail.google.com/mail/?view=cm&fs=1&to=aswinsadanandan99@gmail.com" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
+							<li>
+  <a href="#" onclick="openPopup()" class="icon solid fa-envelope">
+     <span class="label">Email</span>
+  </a>
+</li>
+
 						</ul>
 						<ul class="copyright"></ul>
 						</ul>
